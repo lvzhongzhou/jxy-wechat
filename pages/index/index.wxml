@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="main">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+            <image src="{{item}}" class="slide-image" width="100%"/>
+        </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="newest">
+    <view class="newest-title"><text>精品推荐</text></view>
+    <view class="newest-box">
+      <view class="newest-list">
+          <navigator url="/pages/detail/detail">
+            <image src="/images/index/jiu.jpg"></image>
+            <view class="newest-text"><text>琼浆玉露</text></view>
+            <view class="newest-text"><text>￥ 100.00</text></view>
+          </navigator>
+      </view>
+      <view class="newest-list">
+          <navigator url="/pages/detail/detail">
+            <image src="/images/index/jiu.jpg"></image>
+            <view class="newest-text"><text>琼浆玉露</text></view>
+            <view class="newest-text"><text>￥ 100.00</text></view>
+          </navigator>
+      </view>
+      <view class="newest-list">
+          <navigator url="/pages/detail/detail">
+            <image src="/images/index/jiu.jpg"></image>
+            <view class="newest-text"><text>琼浆玉露</text></view>
+            <view class="newest-text"><text>￥ 100.00</text></view>
+          </navigator>
+      </view>
+      <view class="newest-list">
+          <navigator url="/pages/detail/detail">
+            <image src="/images/index/jiu.jpg"></image>
+            <view class="newest-text"><text>琼浆玉露</text></view>
+            <view class="newest-text"><text>￥ 100.00</text></view>
+          </navigator>
+      </view>
+      <view class="newest-list">
+          <navigator url="/pages/detail/detail">
+            <image src="/images/index/jiu.jpg"></image>
+            <view class="newest-text"><text>琼浆玉露</text></view>
+            <view class="newest-text"><text>￥ 100.00</text></view>
+          </navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+</view>
